@@ -1,0 +1,28 @@
+E -> E + T | T
+T -> T * F | F
+F -> ( E ) | id
+
+id * id + id
+id * id
+
+S -> a A d | b B d | a B e | b A e
+A -> c
+B -> c
+
+
+
+X -> M a | b M c | d c | b d a | d
+M -> d
+
+
+T3
+LR(0)
+S -> A b
+A -> ( b A ) | ( A ) | x
+
+( b ) x b
+
+LR(1)
+S -> N + M | M
+M -> N
+N -> k | x M
